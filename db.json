@@ -1,0 +1,44 @@
+{
+  "seller": [
+    {
+      "name": "Sybill Rogers",
+      "email": "wubiz@mailinator.com",
+      "age": 100,
+      "mobile no.": "+1 (349) 169-2426",
+      "password": "Pa$$w0rd!",
+      "id": 1
+    },
+    {
+      "name": "Blossom Mathews",
+      "email": "talanosi@mailinator.com",
+      "age": 82,
+      "mobile no.": "+1 (245) 559-3296",
+      "password": "Pa$$w0rd!",
+      "id": 2
+    },
+    {
+      "name": "Buckminster Rollins",
+      "email": "sudigaju@mailinator.com",
+      "age": 15,
+      "mobile no.": "+1 (944) 727-9799",
+      "password": "Pa$$w0rd!",
+      "id": 3
+    },
+    {
+      "name": "Reagan Goodwin",
+      "email": "kehi@mailinator.com",
+      "age": 78,
+      "mobile no.": "+1 (707) 589-7655",
+      "password": "Pa$$w0rd!",
+      "id": 4
+    },
+    {
+      "name": "Daryl Howard",
+      "email": "vabi@mailinator.com",
+      "age": 53,
+      "mobile no.": "+1 (617) 807-6917",
+      "password": "Pa$$w0rd!",
+      "id": 5
+    }
+  ]
+}

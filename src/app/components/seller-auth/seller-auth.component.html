@@ -1,0 +1,66 @@
+<div *ngIf="!showLogin" class="container mx-auto w-[50%] h-[90vh]">
+  <div  class="flex justify-center items-center flex-col h-full">
+    <h2 class="py-8 text-indigo-600 text-2xl">Seller Sign-up</h2>
+    <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)">
+      <mat-form-field class="example-full-width w-full">
+        <mat-label>Enter Name</mat-label>
+        <input type="text" matInput name="name" ngModel placeholder="User Name">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width w-full">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput name="email" ngModel placeholder="name@example.com">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width w-full">
+        <mat-label>Age</mat-label>
+        <input type="number" matInput name="age" ngModel placeholder="Age">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width w-full">
+        <mat-label>Mobile No</mat-label>
+        <input type="tel" matInput name="mobile no." ngModel placeholder="Mobile No">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width w-full">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput name="password" ngModel placeholder="Password">
+      </mat-form-field>
+
+      <div class="flex gap-4 w-full">
+        <button mat-raised-button color="primary" class="w-[50%]" type="submit">Sign Up</button>
+        <button mat-raised-button color="accent" class="w-[50%]" type="reset">Reset</button>
+      </div>
+       <div class="w-full text-center py-2">
+         <a class="cursor-pointer" (click)="openLogin()">Already have account?</a>
+       </div>
+    </form>
+  </div>
+</div>
+
+<div *ngIf="showLogin" class="container mx-auto w-[75%] h-[90vh] flex justify-center items-center flex-col">
+  <div  class="w-[60%] text-center">
+    <h2 class="py-8 text-indigo-600 text-2xl">Welcome Back...</h2>
+    <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)">
+
+      <mat-form-field class="example-full-width w-full">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput name="email" ngModel placeholder="name@example.com" class="w-full border">
+      </mat-form-field>
+
+
+      <mat-form-field class="example-full-width w-full">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput name="password" ngModel placeholder="Password" class="w-full border">
+      </mat-form-field>
+
+      <div class="flex gap-4 w-full">
+        <button mat-raised-button color="primary" class="w-[50%]" type="submit">Login</button>
+        <button mat-raised-button color="accent" class="w-[50%]" type="reset">Reset</button>
+      </div>
+        <div class="w-full py-2">
+          <a (click)="openSignUp()" class="cursor-pointer hover:text-sky-700">Don't Have a Account?</a>
+        </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<mat-toolbar color="primary">
+  <div class="flex items-center justify-between w-full">
+
+    <div>
+      <ul class="flex">
+        <li class="px-2 text-base text-lg"><a routerLink="/">My App</a></li>
+        <li class="px-2 text-base invisible"><a routerLink="/seller-auth">SELLER</a></li>
+        <li class="px-2 text-base invisible"><a routerLink="">CART(0)</a></li>
+        <li class="px-2 text-base invisible"><a routerLink="">LOGIN</a></li>
+      </ul>
+    </div>
+    <div>
+      <form class="w-full max-w-sm">
+        <div class="flex items-center border rounded-full"><input
+          class="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none"
+          type="text" placeholder="Search..." aria-label="Full name">
+          <a class="flex cursor-pointer w-[15%]">
+            <mat-icon>search</mat-icon>
+          </a>
+        </div>
+      </form>
+    </div>
+    <div>
+      <ul class="flex">
+        <li class="px-2 text-base"><a routerLink="/">HOME</a></li>
+        <li class="px-2 text-base"><a routerLink="/seller-auth">SELLER</a></li>
+        <li class="px-2 text-base"><a routerLink="">CART(0)</a></li>
+        <li class="px-2 text-base"><a routerLink="">LOGIN</a></li>
+      </ul>
+    </div>
+  </div>
+</mat-toolbar>
